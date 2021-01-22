@@ -1,0 +1,210 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Best Bakery</title>
+<LINK rel=stylesheet type=text/css href="css/style.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+    function checkform() {
+        var biaodanname = document.getElementById('biaodanname').value;
+        var biaodantel = document.getElementById('biaodantel').value;
+        var type = document.getElementById('type').value;
+		var date = document.getElementById('date').value;
+
+        if (document.iform.biaodanname.value == '') {
+            alert('Please enter your name！');
+            document.iform.biaodanname.focus();
+            return false;
+        }
+        
+        if (document.iform.biaodantel.value == '') {
+            alert('Please fill in your email!');
+            document.iform.biaodantel.focus();
+            return false;
+        }
+        if (!(/.+@.+\.[a-zA-Z]{2,4}$/.test(biaodantel))) {
+            alert("Email error, please fill in again!");
+            return false;
+        }
+
+        alert('Name： '+ biaodanname + '\n\nEmail：'+biaodantel+'\n\nProduct interests：'+type+'\n\ndate：'+date);
+    }
+</script>
+</head>
+<body>
+
+<header>
+    <div class="main">
+        <div class="top">
+          <div class="top_bg">
+             <div class="logo"><img src="images/logo.png"></div>
+             <nav>
+                 <ul>
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="about.html">About  Me</a></li>
+                   <li><a href="menu.html">Menu</a></li>
+                   <li style="border:none;"><a href="special.html">Special Offer</a></li>
+                 </ul>
+             </nav>
+           </div>
+		</div>
+        <P>WHENEVER WE BAKE, BAKE WITH OUR HEART</P>
+        <h2><span>Love with baking items</span></h2>
+        <div class="cy"><a href="special.html">CHECK OUR MENU</a></div>
+    </div>
+</header>
+ 
+       
+    <div class="js">
+        <div class="main">
+          <div class="js_l">
+          <h5>BRAND NEW APP TO BLOW YOUR MIND</h5>
+          <h2>We’ve baked every item from the core of our heart to serve you</h2>
+          <p>Our new bakery, conveniently located, is close to the willows shopping center.ours Baker is a craft Baker, trained in Paris. Some of our current clients are James Cook University, cowboy and Telstra.</p>
+          <p>We are here to listen from you deliver exellence by any means.</p>
+          <P><a href="about.html">Get Started Now</a></P>
+          </div>
+        </div>
+    </div>
+
+<div class="cp">
+    <div class="main">
+        <div class="title">
+           <h1>Best selling items</h1>
+           <p>We bake every product carefully</p>
+        </div>
+        <ul>
+           <li>
+               <img src="images/c1.jpg">
+               <h4>Pizza</h4>
+               <p>know your cake shop best. It's delicious,You'll put the last crumb in your mouth</p>
+           </li>
+           <li>
+               <img src="images/c2.jpg">
+               <h4>Bread</h4>
+               <p>know your cake shop best. It's delicious,You'll put the last crumb in your mouth</p>
+           </li>
+           <li>
+               <img src="images/c3.jpg">
+               <h4>Burgers</h4>
+               <p>know your cake shop best. It's delicious,You'll put the last crumb in your mouth</p>
+           </li>
+           <li>
+               <img src="images/c4.jpg">
+               <h4>Chicken</h4>
+               <p>know your cake shop best. It's delicious,You'll put the last crumb in your mouth</p>
+           </li>
+        </ul>
+    </div>
+</div>
+
+<div class="pj">
+    <div class="main">
+          <div class="title">
+           <h1>Enjoy our Client’s Review</h1>
+           <p>We bake every product carefully</p>
+        </div>
+        
+       <div class="pjxq fl">
+           <h1>Fannie Rowe<span><img src="images/1.png"></span></h1>
+           <p>“Petite Treats has the best cheesecake I’ve ever had. Always fresh, and melts in the mouth. Would recommend highly!”</p>
+       </div>
+       
+       <div class="pjxq fr">
+           <h1>Hulda Sutton<span><img src="images/1.png"></span></h1>
+           <p>“I’m addicted to the Danish pastries and always drop in here on my way to work.”</p>
+       </div>
+        
+    </div>
+</div>
+
+<div class="new">
+     <div class="title">
+           <h1>Latest Posts From Our Blog</h1>
+           <p>We bake every product carefully</p>
+     </div>
+        
+    <div class="main">
+        <ul>
+            <li style="margin-left:0;">
+               <em><img src="images/t.jpg"></em>
+               <h1>STOCKING YOUR RESTAURANT KITCHEN FINDING RELIABLE SELLERS</h1>
+               <p>Saving money – is something we would all like to do. Whether you are struggling to manage day to day or earning a six figure salary, saving is something we all think about.</p>
+            </li>
+            <li>
+               <em><img src="images/t1.jpg"></em>
+               <h1>COOKING FOR SPECIAL OCCASIONS COOKWARE IN THE BRICK AND MORTR</h1>
+               <p>Let’s talk about meat fondue recipes and what you need to know first. Meat fondue also known as oil fondue is a method of cooking all kinds of meats, poultry, and seafood in a pot of heated oil.</p>
+            </li>
+            <li>
+               <em><img src="images/t2.jpg"></em>
+               <h1>WHEN YOUR MEAL BITES BACK TIPS FOR AVOIDING FOOD POISONING</h1>
+               <p>While some people really seem to have a knack for barbequing – always grilling up a perfect meal – for the rest of us, it is something that must be learned, not something that just comes naturally. Believe it or not...</p>
+            </li>
+        </ul>
+    </div>
+  
+</div>
+
+<div class="bd">
+<div class="main">
+    <div class="title">
+           <h1>User registration</h1>
+           <p>We bake every product carefully</p>
+     </div>
+     
+     <form id="iform" name="iform" method="post" onSubmit="javascript:return checkform();" enctype="multipart/form-data">
+                <ul>
+                    <li><span>Name：</span><input id="biaodanname" type="text"></li>
+                    <li><span>Email:</span><input id="biaodantel" type="text"  class="text"></li>
+                    <li>
+                         <span>Product interests：</span>
+                            <select id="type" style=" width:460px; float:right; height:34px;" >
+                                  <option value="Pizza">Pizza</option>
+                                  <option value="Bread">Bread</option>
+                                  <option value="Burgers">Burgers</option>
+                                  <option value="Chicken">Chicken</option>
+                            </select>
+                   </li>
+                   <li><span>Birthday:</span><input type="date" id="date"></li>
+                        <li>    <button id="btnSubmit">submit</button>
+                        </li>
+                        
+                        </ul>
+                    </form>
+                    
+     
+     
+</div>
+</div>
+
+<div class="foot">
+   <div class="main">
+    
+    <div class="content">
+        <ul>
+           <li>
+               <h1>Contacts:</h1>
+               <p>0455 5555 555</p>
+           </li>
+           <li>
+               <h1>Catering:</h1>
+               <p>0433 3333 333</p>
+           </li>
+           <li>
+               <h1>Address:</h1>
+               <p>123 Prize Lane, Kirwan, QLD</p>
+           </li>
+        </ul>
+    </div>
+    
+    <footer>
+        <a href="index.html">Home</a>|<a href="about.html">About  Me</a>|<a href="menu.html">Menu</a>|<a href="special.html">Special Offer</a>
+    </footer>
+     Copyright © 2020 Bread . All rights reserved.
+   </div>
+</div>
+</body> 
+</html>
+
